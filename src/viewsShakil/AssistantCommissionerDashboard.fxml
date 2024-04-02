@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="641.0" prefWidth="678.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewsShakil.AssistantCommissionerDashboardController">
+   <children>
+      <Label layoutX="95.0" layoutY="21.0" prefHeight="35.0" prefWidth="489.0" text="Assistant Commissioner(Land) DashBoard" textFill="#161617">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="239.0" layoutY="217.0" mnemonicParsing="false" onAction="#viewLandRecordsButtonOnClick" prefHeight="31.0" prefWidth="187.0" text="View Land Records">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="239.0" layoutY="150.0" mnemonicParsing="false" onAction="#addLandRecordsButtonOnClick" prefHeight="31.0" prefWidth="187.0" text=" Add New Land Records">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="236.0" layoutY="276.0" mnemonicParsing="false" onAction="#editLandRecordsButtonOnClick" text="Edit Existing Land Records">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="232.0" layoutY="419.0" mnemonicParsing="false" onAction="#landMutationButtonOnClick" prefHeight="35.0" prefWidth="201.0" text="Land Mutation Application">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="233.0" layoutY="351.0" mnemonicParsing="false" onAction="#requestSurveyOperationOnClick" prefHeight="35.0" prefWidth="193.0" text="Request Survey Operation">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Line endX="514.0" layoutX="68.0" layoutY="64.0" startX="15.0" />
+      <Button layoutX="282.0" layoutY="557.0" mnemonicParsing="false" onAction="#logOutButtonOnClick" prefHeight="46.0" prefWidth="94.0" text="Log Out" textFill="#dd1010" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="708.0" prefWidth="1046.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewsHamim.BalamBookController">
+   <children>
+      <Label layoutX="23.0" layoutY="211.0" text="Details " textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="112.0" text="Page No" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="358.0" layoutY="112.0" text="Area Type " textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="11.0" layoutY="299.0" prefHeight="337.0" prefWidth="760.0">
+        <columns>
+          <TableColumn fx:id="pageNoTableColumn" prefWidth="106.0" text="Page No " />
+          <TableColumn fx:id="areaTypeTableColumn" prefWidth="152.0" text="Area Type" />
+            <TableColumn fx:id="detailsTableColumn" prefWidth="336.0" text="Details" />
+            <TableColumn fx:id="dateBalamBookTableColumn" prefWidth="165.0" text="Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="793.0" layoutY="102.0" mnemonicParsing="false" onAction="#addInfoToTableOnClick" prefHeight="79.0" prefWidth="218.0" text="Add Info to Table " />
+      <DatePicker fx:id="balamBookDatePicker" layoutX="532.0" layoutY="174.0" />
+      <Label layoutX="284.0" layoutY="21.0" text="Balam Book " textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="pageNoTextFieldId" layoutX="95.0" layoutY="110.0" />
+      <Label layoutX="481.0" layoutY="176.0" text="Date" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="detailsTextAreaId" layoutX="95.0" layoutY="181.0" prefHeight="79.0" prefWidth="318.0" />
+      <Button layoutX="14.0" layoutY="643.0" mnemonicParsing="false" onAction="#backToCopuistDashboardOnClick" prefHeight="51.0" prefWidth="259.0" text="Go Back to Copyist Dashboard" />
+      <TextField fx:id="areaTypeTextFieldId" layoutX="443.0" layoutY="110.0" />
+      <Button layoutX="793.0" layoutY="193.0" mnemonicParsing="false" onAction="#saveTableInfoOnClick" prefHeight="64.0" prefWidth="218.0" text="Save Table Info" />
+      <Button layoutX="793.0" layoutY="278.0" mnemonicParsing="false" onAction="#ShowSavedTableInfoOnClick" prefHeight="64.0" prefWidth="218.0" text="Show Saved Info " />
+      <Button layoutX="794.0" layoutY="636.0" mnemonicParsing="false" onAction="#goToBalamBookPageOnClick" prefHeight="31.0" prefWidth="218.0" text="Go to BalamBookPage" />
+   </children>
+</AnchorPane>

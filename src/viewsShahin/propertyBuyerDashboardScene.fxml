@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="701.0" style="-fx-background-color: #566D7E;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewsShahin.PropertyBuyerDashboardSceneController">
+   <children>
+      <TextField editable="false" layoutX="195.0" layoutY="31.0" prefHeight="42.0" prefWidth="250.0" text="Property Buyer Dashboard">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <Button layoutX="390.0" layoutY="297.0" mnemonicParsing="false" onAction="#viewChangeOwnershipRecordOnClick" text="View Change Ownership Record">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="389.0" layoutY="234.0" mnemonicParsing="false" onAction="#nonIncomeRangeCertificate" text="Non-income range certificate">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="387.0" layoutY="170.0" mnemonicParsing="false" onAction="#landMutationRecord" text="Land Mutation Record">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="388.0" layoutY="117.0" mnemonicParsing="false" onAction="#viewLandRecordOfTheRightOnClick" text="View Land Record of the right">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="75.0" layoutY="170.0" mnemonicParsing="false" onAction="#applyForChangeOwnershipOnClick" text="Apply for Change of Ownership">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="77.0" layoutY="234.0" mnemonicParsing="false" onAction="#payStampDutyOnClick" text="Pay Stamp Duty">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="78.0" layoutY="297.0" mnemonicParsing="false" onAction="#statusOfPaymentOnClick" text="Status of Payment">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="78.0" layoutY="117.0" mnemonicParsing="false" onAction="#landRegistrationOnClick" text="Land Registration">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="600.0" layoutY="361.0" mnemonicParsing="false" onAction="#logOutButtonOnClick" text="Log Out" />
+   </children>
+</AnchorPane>

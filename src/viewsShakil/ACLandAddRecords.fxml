@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="626.0" prefWidth="1143.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewsShakil.ACLandAddRecordsController">
+   <children>
+      <Label layoutX="19.0" layoutY="25.0" text="Add New Record">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Line endX="57.0" layoutX="115.0" layoutY="55.0" startX="-100.0" />
+      <TextField fx:id="plotNoTextField" layoutX="31.0" layoutY="95.0" prefHeight="30.0" prefWidth="166.0" promptText="Enter Plot (dag) No." />
+      <TextField fx:id="khatianNoTextField" layoutX="31.0" layoutY="144.0" prefHeight="30.0" prefWidth="166.0" promptText="Enter Khatian No." />
+      <TextField fx:id="presentPossessorTextField" layoutX="31.0" layoutY="195.0" prefHeight="30.0" prefWidth="166.0" promptText="Enter Present Possessor" />
+      <TextField fx:id="districtTextField" layoutX="227.0" layoutY="95.0" prefHeight="30.0" prefWidth="166.0" promptText="Enter District" />
+      <TextField fx:id="upazillaTextField" layoutX="227.0" layoutY="144.0" prefHeight="30.0" prefWidth="166.0" promptText="Enter Upazilla" />
+      <TextField fx:id="mouzaTextField" layoutX="227.0" layoutY="195.0" prefHeight="30.0" prefWidth="166.0" promptText="Enter Mouza" />
+      <TextField fx:id="valueTextField" layoutX="416.0" layoutY="144.0" prefHeight="30.0" prefWidth="196.0" promptText="Enter Land Value in Taka" />
+      <TextField fx:id="sizeTextField" layoutX="416.0" layoutY="95.0" prefHeight="30.0" prefWidth="196.0" promptText="Enter Size in sq. ft." />
+      <Line endX="153.66668701171875" endY="3.6666717529296875" layoutX="60.0" layoutY="82.0" startX="153.66668701171875" startY="150.33334350585938" strokeWidth="0.3" />
+      <Button layoutX="712.0" layoutY="102.0" mnemonicParsing="false" onAction="#addRecordButtonOnClick" prefHeight="47.0" prefWidth="135.0" text="Add Record">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="19.0" layoutY="556.0" mnemonicParsing="false" onAction="#returnToDashboardButtonOnClick" prefHeight="40.0" prefWidth="135.0" text="Return To Dashboard" />
+      <Line endX="143.0" endY="-4.9999847412109375" layoutX="-132.0" layoutY="251.0" startX="1274.0" startY="-5.0" />
+      <Line endX="153.66668701171875" endY="3.6666717529296875" layoutX="253.0" layoutY="82.0" startX="153.66668701171875" startY="150.33334350585938" strokeWidth="0.3" />
+      <Line endX="153.66668701171875" endY="3.6666717529296875" layoutX="472.0" layoutY="82.0" startX="153.66668701171875" startY="150.33334350585938" strokeWidth="0.3" />
+      <Button layoutX="762.0" layoutY="165.0" mnemonicParsing="false" onAction="#saveRecordButtonOnclick" prefHeight="61.0" prefWidth="196.0" text="Register Record" wrapText="true">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <TableView fx:id="landTableView" layoutX="11.0" layoutY="278.0" prefHeight="254.0" prefWidth="1126.0">
+        <columns>
+          <TableColumn fx:id="plotNoColumn" prefWidth="97.0" text="Plot (dag) No" />
+          <TableColumn fx:id="khatianNoColumn" prefWidth="98.0" text="Khatian No" />
+            <TableColumn fx:id="presentPossessorColumn" prefWidth="203.0" text="Present Possessor" />
+            <TableColumn fx:id="districtColumn" prefWidth="134.0" text="District" />
+            <TableColumn fx:id="upazillaColumn" prefWidth="124.0" text="Upazilla" />
+            <TableColumn fx:id="mouzaColumn" prefWidth="108.0" text="Mouza" />
+            <TableColumn fx:id="sizeColumn" minWidth="0.0" prefWidth="113.0" text="Size (sq. ft.)" />
+            <TableColumn fx:id="valueColumn" prefWidth="91.0" text="Value (Tk)" />
+            <TableColumn fx:id="recordingDateColumn" prefWidth="143.0" text="Recording Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="860.0" layoutY="110.0" mnemonicParsing="false" onAction="#deleteRecordButtonOnClick" prefHeight="31.0" prefWidth="120.0" text="Delete Record">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="recordingDatePicker" layoutX="416.0" layoutY="195.0" prefHeight="30.0" prefWidth="196.0" promptText="Recording Date" />
+   </children>
+</AnchorPane>

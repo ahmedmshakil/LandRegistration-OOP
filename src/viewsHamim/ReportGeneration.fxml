@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="687.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewsHamim.ReportGenerationController">
+   <children>
+      <Label layoutX="213.0" layoutY="24.0" text="Report Generation" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button layoutX="411.0" layoutY="122.0" mnemonicParsing="false" onAction="#loadBinFileOnClick" prefHeight="60.0" prefWidth="204.0" text="Load Tax Info " />
+      <TableView fx:id="tableView" layoutX="48.0" layoutY="128.0" prefHeight="296.0" prefWidth="330.0">
+        <columns>
+          <TableColumn fx:id="taxcCodeTableColumn" prefWidth="104.0" text="Tax Code" />
+          <TableColumn fx:id="amountTableColumn" prefWidth="126.0" text="Amount" />
+            <TableColumn fx:id="dateTableColumn" prefWidth="99.0" text="Date " />
+        </columns>
+      </TableView>
+      <Button layoutX="48.0" layoutY="435.0" mnemonicParsing="false" onAction="#backToTaxcollectorCopysistDashboard" prefHeight="39.0" prefWidth="330.0" text="Back to Tax Collector Copyist Dashboard" />
+      <Button layoutX="411.0" layoutY="439.0" mnemonicParsing="false" onAction="#generatepdfOnClick" text="Go to Pdf Generations Of Report " />
+   </children>
+</AnchorPane>

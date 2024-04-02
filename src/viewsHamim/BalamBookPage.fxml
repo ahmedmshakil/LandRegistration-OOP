@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="509.0" prefWidth="851.0" style="-fx-background-color: gray;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="viewsHamim.BalamBookPageController">
+   <children>
+      <Label layoutX="326.0" layoutY="31.0" text="BalamBook Page" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="230.0" layoutY="181.0" prefHeight="298.0" prefWidth="593.0">
+        <columns>
+          <TableColumn fx:id="pageNoTableColumn" prefWidth="100.0" text="Page No" />
+          <TableColumn fx:id="areaTypeTableColumn" prefWidth="120.0" text="Area Type" />
+            <TableColumn fx:id="detailsTableColumn" prefWidth="194.0" text="Details" />
+            <TableColumn fx:id="dateBalamBookTableColumn" prefWidth="178.0" text="Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="30.0" layoutY="448.0" mnemonicParsing="false" onAction="#backToBalamBook" text="Go Back to Balam Book" />
+      <Button layoutX="30.0" layoutY="181.0" mnemonicParsing="false" onAction="#deleteButtonOnClick" prefHeight="31.0" prefWidth="100.0" text="Delete " />
+      <Button layoutX="31.0" layoutY="239.0" mnemonicParsing="false" onAction="#editButtonOnClick" prefHeight="31.0" prefWidth="100.0" text="Edit " />
+      <Button layoutX="30.0" layoutY="120.0" mnemonicParsing="false" onAction="#ShowSavedTableInfoOnClick" text="Load Pages " />
+   </children>
+</AnchorPane>
