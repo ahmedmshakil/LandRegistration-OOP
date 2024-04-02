@@ -34,3 +34,4 @@ public class MainApplication extends Application {
     }
     
 }
+//copyright to group21(land Registration-course-cse213-autumn2023)
